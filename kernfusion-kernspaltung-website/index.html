@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interaktive Präsentationswebsite zu Kernfusion und Kernspaltung für Physik Klasse 11.">
+    <title>Kernfusion und Kernspaltung</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/app.js"></script>
+  </head>
+  <body>
+    <div class="x-field" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#start" aria-label="Zur Startseite">
+        <span class="brand-mark">E=mc²</span>
+        <span>Kernphysik</span>
+      </a>
+      <nav class="top-nav" aria-label="Hauptnavigation">
+        <a href="#seiten">Themen</a>
+        <a href="#vergleich">Vergleich</a>
+        <a href="/admin">Admin</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="start" class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Physik Präsentation · Klasse 11</p>
+          <h1>Kernfusion und Kernspaltung</h1>
+          <p class="hero-copy">Zwei Wege, Energie aus dem Atomkern freizusetzen: das Verschmelzen leichter Kerne in Sternen und das Spalten schwerer Kerne in Reaktoren.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#seiten">Präsentation starten</a>
+            <a class="button secondary" href="#vergleich">Direkt zum Vergleich</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Kernidee">
+        <div class="intro-grid">
+          <article>
+            <span class="mini-label">Fusion</span>
+            <strong>Leichte Kerne werden verbunden.</strong>
+            <p>Die Sonne gewinnt ihre Energie, weil Wasserstoffkerne zu Helium verschmelzen.</p>
+          </article>
+          <article>
+            <span class="mini-label">Spaltung</span>
+            <strong>Schwere Kerne werden geteilt.</strong>
+            <p>Kernkraftwerke nutzen die Energie, die beim Zerfall schwerer Atomkerne entsteht.</p>
+          </article>
+          <article>
+            <span class="mini-label">Energie</span>
+            <strong>Masse wird messbar zu Energie.</strong>
+            <p>Der Massendefekt erklärt, warum kleine Teilchen große Energiemengen liefern können.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="seiten" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Deine Seiten</p>
+          <h2>Präsentationskapitel</h2>
+        </div>
+        <div id="pages" class="page-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="vergleich" class="compare-section">
+        <div class="section-heading">
+          <p class="eyebrow">Einordnung</p>
+          <h2>Fusion vs. Spaltung</h2>
+        </div>
+        <div class="compare-table" role="table" aria-label="Vergleich von Kernfusion und Kernspaltung">
+          <div role="row" class="table-head">
+            <span role="columnheader">Aspekt</span>
+            <span role="columnheader">Kernfusion</span>
+            <span role="columnheader">Kernspaltung</span>
+          </div>
+          <div role="row">
+            <span role="cell">Prinzip</span>
+            <span role="cell">Leichte Kerne verschmelzen.</span>
+            <span role="cell">Schwere Kerne zerfallen.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Beispiel</span>
+            <span role="cell">Sonne und andere Sterne.</span>
+            <span role="cell">Uran-235 im Kernreaktor.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Bedingungen</span>
+            <span role="cell">Extrem hohe Temperatur und Druck.</span>
+            <span role="cell">Neutronen können eine Kettenreaktion starten.</span>
+          </div>
+          <div role="row">
+            <span role="cell">Bedeutung</span>
+            <span role="cell">Zukunftstechnologie für Energiegewinnung.</span>
+            <span role="cell">Heute technisch etabliert, aber mit Entsorgungsfragen.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Kernfusion und Kernspaltung</span>
+      <a href="/admin">Inhalte bearbeiten</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Sonnenoberflaeche</title>
+  <desc id="desc">Stilisierte Sonnenoberflaeche mit Plasmawirbeln fuer eine Physik-Praesentation.</desc>
+  <defs>
+    <radialGradient id="core" cx="36%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#fff7c7"/>
+      <stop offset="0.24" stop-color="#ffd45a"/>
+      <stop offset="0.52" stop-color="#ff8a2b"/>
+      <stop offset="0.78" stop-color="#d34417"/>
+      <stop offset="1" stop-color="#1b0b08"/>
+    </radialGradient>
+    <filter id="plasma">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011 0.025" numOctaves="5" seed="12"/>
+      <feColorMatrix values="1.4 0 0 0 0.15  0 0.55 0 0 0.04  0 0 0.18 0 0  0 0 0 1 0"/>
+      <feBlend in2="SourceGraphic" mode="screen"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1100" fill="#03050a"/>
+  <circle cx="650" cy="460" r="570" fill="url(#core)" filter="url(#plasma)"/>
+  <g opacity="0.55" fill="none" stroke-linecap="round" filter="url(#soft)">
+    <path d="M185 430 C430 230 620 650 865 420 C1030 268 1115 218 1245 190" stroke="#fff0a6" stroke-width="28"/>
+    <path d="M230 655 C480 820 710 300 980 612 C1120 775 1265 710 1410 635" stroke="#ffbd47" stroke-width="22"/>
+    <path d="M395 180 C565 325 650 170 835 260 C1015 348 1085 530 1280 445" stroke="#fff6c4" stroke-width="18"/>
+  </g>
+  <g opacity="0.38">
+    <circle cx="545" cy="310" r="88" fill="#fff1a1"/>
+    <circle cx="780" cy="585" r="120" fill="#ffcf52"/>
+    <circle cx="384" cy="641" r="74" fill="#ff7432"/>
+    <circle cx="985" cy="360" r="96" fill="#f55b24"/>
+  </g>
+  <rect width="1800" height="1100" fill="#001f73" opacity="0.18"/>
+  <rect width="1800" height="1100" fill="#000" opacity="0.28"/>
+</svg>

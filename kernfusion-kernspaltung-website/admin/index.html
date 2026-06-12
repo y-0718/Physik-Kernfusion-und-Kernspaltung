@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin · Kernphysik</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/admin.js"></script>
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <section class="admin-login" id="loginPanel">
+        <div class="admin-card">
+          <p class="eyebrow">Admin</p>
+          <h1>Inhalte bearbeiten</h1>
+          <form id="loginForm" class="stack">
+            <label>
+              Passwort
+              <input id="password" type="password" autocomplete="current-password" required>
+            </label>
+            <button class="button primary" type="submit">Einloggen</button>
+          </form>
+          <p class="form-message" id="loginMessage"></p>
+        </div>
+      </section>
+
+      <section class="admin-workspace hidden" id="workspacePanel">
+        <header class="admin-top">
+          <div>
+            <p class="eyebrow">Präsentation</p>
+            <h1>Seitenverwaltung</h1>
+          </div>
+          <div class="admin-actions">
+            <a class="button secondary" href="/">Website ansehen</a>
+            <button class="button secondary" id="logoutButton" type="button">Logout</button>
+          </div>
+        </header>
+
+        <div class="admin-grid">
+          <aside class="admin-list">
+            <button class="button primary full" id="newButton" type="button">Neue Seite</button>
+            <div id="pageList" class="list-items"></div>
+          </aside>
+
+          <form id="pageForm" class="editor-panel">
+            <input type="hidden" id="pageId">
+            <div class="form-row">
+              <label>
+                Titel
+                <input id="title" required placeholder="z. B. Ablauf der Kernfusion">
+              </label>
+              <label>
+                URL-Name
+                <input id="slug" placeholder="ablauf-der-kernfusion">
+              </label>
+            </div>
+            <label>
+              Kurzbeschreibung
+              <textarea id="summary" rows="3" placeholder="Ein kurzer Einstieg für die Kachel auf der Website."></textarea>
+            </label>
+            <label>
+              Haupttext
+              <textarea id="body" rows="9" placeholder="Dein Präsentationstext. Absätze entstehen durch Leerzeilen."></textarea>
+            </label>
+            <div class="form-row">
+              <label>
+                Bild-URL
+                <input id="imageUrl" type="url" placeholder="https://...">
+              </label>
+              <label>
+                Video-URL
+                <input id="videoUrl" type="url" placeholder="YouTube, Vimeo oder .mp4">
+              </label>
+            </div>
+            <div class="form-row compact">
+              <label>
+                Reihenfolge
+                <input id="sortOrder" type="number" value="0">
+              </label>
+              <label class="checkbox-line">
+                <input id="isPublished" type="checkbox" checked>
+                Veröffentlicht
+              </label>
+            </div>
+            <div class="editor-actions">
+              <button class="button primary" type="submit">Speichern</button>
+              <button class="button danger" id="deleteButton" type="button">Löschen</button>
+            </div>
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

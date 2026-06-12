@@ -1,0 +1,17 @@
+{
+  "name": "kernfusion-kernspaltung-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "zip": "cd .. && zip -r kernfusion-kernspaltung-website.zip kernfusion-kernspaltung-website -x \"*/node_modules/*\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "cookie": "^0.6.0"
+  },
+  "devDependencies": {
+    "vercel": "^34.3.0"
+  }
+}
